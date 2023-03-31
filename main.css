@@ -9,6 +9,7 @@ body {
     display: grid;
     grid-template: 
     "head main" auto / 1fr 9fr;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 header {
