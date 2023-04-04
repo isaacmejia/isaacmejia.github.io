@@ -224,6 +224,7 @@ a:hover {
         font-size: 2rem;
         font-weight: lighter;
         margin: 0px;
+        line-height: 2.5rem;
     }
     
     #name {
