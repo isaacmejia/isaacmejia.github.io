@@ -10,6 +10,7 @@ body {
     grid-template: 
     "head main" auto / 1fr 9fr;
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    font-family: 'Literata';
 }
 
 header {
@@ -39,10 +40,6 @@ main {
     grid-area: main;
 }
 
-#information {
-    grid-area: information;
-}
-
 .headshot {
     grid-area: headshot;
 }
@@ -55,11 +52,6 @@ main {
 
 .greeting {
     font-style: italic;
-}
-
-#information img {
-    max-width: 100%;
-    max-height: 100%; 
 }
 
 .gradient-name {
@@ -79,15 +71,26 @@ main {
     max-height: 100%;
 }
 
-#information {
-    width: 50%;
-    font-size: 1.5rem;
+#aboutInformation > * {
+    margin: 5px;
 }
 
-#information h1 {
+.information {
+    width: 50%;
+    font-size: 1.5rem;
+    grid-area: information;
+}
+
+.information h1 {
     font-size: 5rem;
     font-weight: lighter;
     margin: 0px;
+    line-height: 4.5rem;
+}
+
+.information img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #name {
@@ -212,12 +215,12 @@ a:hover {
         padding-right: 1rem;
     }
     
-    #information {
+    .information {
         width: 20vh;
         font-size: 1rem;
     }
     
-    #information h1 {
+    .information h1 {
         font-size: 2rem;
         font-weight: lighter;
         margin: 0px;
