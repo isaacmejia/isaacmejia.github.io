@@ -17,7 +17,7 @@
             <ul>
                 <a href="about.html"><li>ABOUT</li></a>
                 <a href="projects.html"><li>PROJECTS</li></a>
-                <a href="contact.html"><li>CONTACT</li></a>
+                <a href="contact.html"><li class="current">CONTACT</li></a>
             </ul>
         </nav>
         <div id="socials">
@@ -28,13 +28,29 @@
     </header>
     <main class="generalmain">
         <div class="information">
-            <h1>MY NAME IS <span id="name">ISAAC MEJIA...</span></h1>
-            <p><span id="position">Full stack developer</span> based in <span id="location">Toronto</span></p>
-            <button>Contact Me</button>
-            <p id="email-me">isaacmejia@me.com</p>
+            <p class="greeting">Contact</p>
+            <h2>REACH OUT TO ME</h2>
+            <h3>isaacmejia@me.com</h3>
+            <a href="https://www.instagram.com/isaacfmejia/">Instagram</a>
+            <a href="https://github.com/isaacmejia">Github</a>
         </div>
-        <div class="headshot">
-            <img src="resources/photos/Untitled-2.png">
+        <div class="headshot" id="contactform">
+            <h2>PROJECT IDEAS?</h2>
+            <form>
+                <div id="fullname">
+                    <input type="text" id="fname" name="fname" value="NAME">
+                </div>
+                <div id="reply">
+                    <input type="email" id="email" name="lname" value="EMAIL">
+                </div>
+                <div id="textMessage">
+                    <label for="message">MESSAGE</label>
+                    <textarea type="text" id="message" name="message"></textarea>
+                </div>
+                <div id="submitbutton">
+                    <button type="submit">Submit Now</button>
+                </div>
+            </form>
         </div>
     </main>
 </body>
