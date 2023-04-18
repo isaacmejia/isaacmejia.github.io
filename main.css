@@ -184,6 +184,7 @@ a:visited {
     padding: 40px 60px;
     grid-template-rows: 1fr 3fr;
     width: 80%;
+    grid-area: headshot;
 }
 
 #contactform h2 {
@@ -243,6 +244,405 @@ label {
     padding: 20px 30px;
 }
 
+@media only screen and (max-width: 1366px) {
+    html {
+        height: 100vh;
+        max-height: 100vh;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0;
+    }
+
+    /* header h2 {
+        grid-area: heading;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+    
+    .generalmain {
+        background-color: #FFFFFF;
+        display: grid;
+        place-items: center;
+        grid-template: 
+        "information headshot" auto / 1fr 1fr;
+        grid-area: main;
+    }
+
+    .headshot {
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        padding-right: 3vh;
+    }
+    
+    .headshot img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .more-information {
+        grid-area: headshot;
+        font-size: 1rem;
+        padding-right: 2rem;
+    }
+    
+    .information {
+        width: 20vh;
+        font-size: 1rem;
+    }
+    
+    .information h1 {
+        font-size: 2rem;
+        font-weight: lighter;
+        margin: 0px;
+        line-height: 2.5rem;
+    }
+    
+    #name {
+        font-weight: bold;
+    }
+    
+    #position, #location {
+        font-style: italic;
+        font-weight: bold;
+    }
+    
+    #email-me {
+        font-style: italic;
+    }
+    
+    button {
+        background-color: #141313;
+        color: #FFFFFF;
+        border: none;
+        padding: 10px 20px;
+    }
+
+    #socials {
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+    }
+    
+    header img {
+        width: 3vh;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        grid-area: socials;
+    }
+
+    #aboutInformation h2 {
+        font-size: 1rem;
+    }
+
+    .projectsmain {
+        background-color: #FFFFFF;
+        display: grid;
+        place-items: center;
+    }
+    
+    #projects {
+        display: grid;
+        grid-template: "projectone projecttwo" 1fr "projectthree projectfour" 1fr / 1fr 1fr;
+        margin: 1vh 1vh;
+    }
+    
+    #projects > * {
+        margin: 1vh 1vh;
+        max-width: 30vh;
+        min-height: 30vh;
+    }
+    
+    #project1 {
+        grid-area: projectone;
+    }
+    
+    #project2 {
+        grid-area: projecttwo;
+    }
+    
+    #project3 {
+        grid-area: projectthree;
+    }
+    
+    #project4 {
+        grid-area: projectfour;
+    }
+    
+    #contactform {
+        background: linear-gradient(90deg, rgba(184,106,223,1) 0%, rgba(255,108,99,1) 35%, rgba(255,177,71,1) 100%);;
+        height: 60vh;
+        display: grid;
+        padding: 40px 60px;
+        grid-template-rows: 1fr 3fr;
+        width: 70%;
+        grid-area: headshot;
+    }
+    
+    #contactform h2 {
+        color: #FFFFFF;
+        font-size: 1.5rem;
+    }
+    
+    form {
+        display: grid;
+        grid-template: "fname email" 1fr "message message" 1fr "button button" 1fr / 1fr 1fr;
+    }
+    
+    input {
+        background: transparent;
+        border-width: 0 0 3px 0;
+        color: #FFFFFF;
+        padding: 10px 0px;
+        width: 90%;
+        font-size: 1rem;
+    }
+    
+    label {
+        color: #FFFFFF;
+        font-size: 1rem;
+    }
+    
+    #fullname {
+        grid-area: fname;
+    }
+    
+    #reply {
+        grid-area: email;
+    }
+    
+    #textMessage {
+        grid-area: message;
+    }
+    
+    #textMessage textarea {
+        background: transparent;
+        border-width: 0 0 3px 0;
+        color: #FFFFFF;
+        width: 95%;
+        min-height: 40%;
+        resize: none;
+    }
+    
+    #textMessage label {
+        display: block;
+    }
+    
+    #submitbutton {
+        grid-area: button;
+    }
+    
+    #submitbutton button {
+        padding: 20px 30px;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    html {
+        height: 100vh;
+        max-height: 100vh;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0;
+    }
+
+    /* header h2 {
+        grid-area: heading;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+    
+    .generalmain {
+        background-color: #FFFFFF;
+        display: grid;
+        place-items: center;
+        grid-template: 
+        "information headshot" auto / 1fr 1fr;
+        grid-area: main;
+    }
+
+    .headshot {
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        padding-right: 3vh;
+    }
+    
+    .headshot img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .more-information {
+        grid-area: headshot;
+        font-size: .8rem;
+        padding-right: 2rem;
+    }
+    
+    .information {
+        width: 20vh;
+        font-size: .8rem;
+    }
+    
+    .information h1 {
+        font-size: 2rem;
+        font-weight: lighter;
+        margin: 0px;
+        line-height: 2.5rem;
+    }
+    
+    #name {
+        font-weight: bold;
+    }
+    
+    #position, #location {
+        font-style: italic;
+        font-weight: bold;
+    }
+    
+    #email-me {
+        font-style: italic;
+    }
+    
+    button {
+        background-color: #141313;
+        color: #FFFFFF;
+        border: none;
+        padding: 10px 20px;
+    }
+
+    #socials {
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+    }
+    
+    header img {
+        width: 3vh;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        grid-area: socials;
+    }
+
+    #aboutInformation h2 {
+        font-size: 1rem;
+    }
+
+    .projectsmain {
+        background-color: #FFFFFF;
+        display: grid;
+        place-items: center;
+    }
+    
+    #projects {
+        display: grid;
+        grid-template: "projectone projecttwo" 1fr "projectthree projectfour" 1fr / 1fr 1fr;
+        margin: 1vh 1vh;
+    }
+    
+    #projects > * {
+        margin: 1vh 1vh;
+        max-width: 30vh;
+        min-height: 30vh;
+    }
+    
+    #project1 {
+        grid-area: projectone;
+    }
+    
+    #project2 {
+        grid-area: projecttwo;
+    }
+    
+    #project3 {
+        grid-area: projectthree;
+    }
+    
+    #project4 {
+        grid-area: projectfour;
+    }
+    
+    #contactform {
+        background: linear-gradient(90deg, rgba(184,106,223,1) 0%, rgba(255,108,99,1) 35%, rgba(255,177,71,1) 100%);;
+        height: 50vh;
+        display: grid;
+        padding: 20px 60px;
+        grid-template-rows: 1fr 3fr;
+        width: 50%;
+        grid-area: headshot;
+    }
+    
+    #contactform h2 {
+        color: #FFFFFF;
+        font-size: 1.5rem;
+    }
+    
+    form {
+        display: grid;
+        grid-template: "fname email" 1fr "message message" 1fr "button button" 1fr / 1fr 1fr;
+    }
+    
+    input {
+        background: transparent;
+        border-width: 0 0 3px 0;
+        color: #FFFFFF;
+        padding: 10px 0px;
+        width: 90%;
+        font-size: .8rem;
+    }
+    
+    label {
+        color: #FFFFFF;
+        font-size: .8rem;
+    }
+    
+    #fullname {
+        grid-area: fname;
+    }
+    
+    #reply {
+        grid-area: email;
+    }
+    
+    #textMessage {
+        grid-area: message;
+    }
+    
+    #textMessage textarea {
+        background: transparent;
+        border-width: 0 0 3px 0;
+        color: #FFFFFF;
+        width: 95%;
+        min-height: 40%;
+        resize: none;
+    }
+    
+    #textMessage label {
+        display: block;
+    }
+    
+    #submitbutton {
+        grid-area: button;
+    }
+    
+    #submitbutton button {
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+
+}
+
 @media only screen and (max-width: 430px) {
     html {
         height: 100vh;
@@ -287,14 +687,14 @@ label {
         display: inline-block;
     }
 
-    h2 {
+    header h2 {
         grid-area: heading;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     
-    main {
+    .generalmain {
         background-color: #FFFFFF;
         display: grid;
         place-items: center;
@@ -402,216 +802,19 @@ label {
     }
     
     #contactform {
-        background: linear-gradient(90deg, rgba(184,106,223,1) 0%, rgba(255,108,99,1) 35%, rgba(255,177,71,1) 100%);;
+        background: linear-gradient(90deg, rgba(184,106,223,1) 0%, rgba(255,108,99,1) 35%, rgba(255,177,71,1) 100%);
         height: 60vh;
         display: grid;
-        padding: 40px 60px;
+        padding: 1vh 2.5vh;
+        margin-right: 1vh;
         grid-template-rows: 1fr 3fr;
         width: 80%;
-    }
-    
-    #contactform h2 {
-        color: #FFFFFF;
-        font-size: 2rem;
-    }
-    
-    form {
-        display: grid;
-        grid-template: "fname email" 1fr "message message" 1fr "button button" 1fr / 1fr 1fr;
-    }
-    
-    input {
-        background: transparent;
-        border-width: 0 0 3px 0;
-        color: #FFFFFF;
-        padding: 10px 0px;
-        width: 90%;
-        font-size: 1rem;
-    }
-    
-    label {
-        color: #FFFFFF;
-        font-size: 1rem;
-    }
-    
-    #fullname {
-        grid-area: fname;
-    }
-    
-    #reply {
-        grid-area: email;
-    }
-    
-    #textMessage {
-        grid-area: message;
-    }
-    
-    #textMessage textarea {
-        background: transparent;
-        border-width: 0 0 3px 0;
-        color: #FFFFFF;
-        width: 95%;
-        min-height: 40%;
-        resize: none;
-    }
-    
-    #textMessage label {
-        display: block;
-    }
-    
-    #submitbutton {
-        grid-area: button;
-    }
-    
-    #submitbutton button {
-        padding: 20px 30px;
-    }
-}
-
-
-
-@media only screen and (max-width: 1366px) {
-    html {
-        height: 100vh;
-        max-height: 100vh;
-    }
-    
-    nav ul {
-        list-style: none;
-        padding: 0px;
-        margin: 0;
-    }
-
-    h2 {
-        grid-area: heading;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .generalmain {
-        background-color: #FFFFFF;
-        display: grid;
-        place-items: center;
-        grid-template: 
-        "information headshot" auto / 1fr 1fr;
-        grid-area: main;
-    }
-
-    .headshot {
-        height: 50vh;
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        padding-right: 3vh;
-    }
-    
-    .headshot img {
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-    .more-information {
         grid-area: headshot;
-        font-size: 1rem;
-        padding-right: 2rem;
-    }
-    
-    .information {
-        width: 20vh;
-        font-size: 1rem;
-    }
-    
-    .information h1 {
-        font-size: 2rem;
-        font-weight: lighter;
-        margin: 0px;
-        line-height: 2.5rem;
-    }
-    
-    #name {
-        font-weight: bold;
-    }
-    
-    #position, #location {
-        font-style: italic;
-        font-weight: bold;
-    }
-    
-    #email-me {
-        font-style: italic;
-    }
-    
-    button {
-        background-color: #141313;
-        color: #FFFFFF;
-        border: none;
-        padding: 10px 20px;
-    }
-
-    #socials {
-        display: flex;
-        align-items: center;
-        justify-content:space-evenly;
-    }
-    
-    header img {
-        width: 3vh;
-        background-color: #FFFFFF;
-        border-radius: 50%;
-        grid-area: socials;
-    }
-
-    #aboutInformation h2 {
-        font-size: 1rem;
-    }
-
-    .projectsmain {
-        background-color: #FFFFFF;
-        display: grid;
-        place-items: center;
-    }
-    
-    #projects {
-        display: grid;
-        grid-template: "projectone projecttwo" 1fr "projectthree projectfour" 1fr / 1fr 1fr;
-        margin: 1vh 1vh;
-    }
-    
-    #projects > * {
-        margin: 1vh 1vh;
-        max-width: 30vh;
-        min-height: 30vh;
-    }
-    
-    #project1 {
-        grid-area: projectone;
-    }
-    
-    #project2 {
-        grid-area: projecttwo;
-    }
-    
-    #project3 {
-        grid-area: projectthree;
-    }
-    
-    #project4 {
-        grid-area: projectfour;
-    }
-    
-    #contactform {
-        background: linear-gradient(90deg, rgba(184,106,223,1) 0%, rgba(255,108,99,1) 35%, rgba(255,177,71,1) 100%);;
-        height: 60vh;
-        display: grid;
-        padding: 40px 60px;
-        grid-template-rows: 1fr 3fr;
-        width: 80%;
     }
     
     #contactform h2 {
         color: #FFFFFF;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     
     form {
@@ -666,203 +869,7 @@ label {
         padding: 20px 30px;
     }
 
+    h3 {
+        font-size: 1rem;
+    }
 }
-
-@media only screen and (max-width: 800px) {
-    html {
-        height: 100vh;
-        max-height: 100vh;
-    }
-    
-    nav ul {
-        list-style: none;
-        padding: 0px;
-        margin: 0;
-    }
-
-    h2 {
-        grid-area: heading;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .generalmain {
-        background-color: #FFFFFF;
-        display: grid;
-        place-items: center;
-        grid-template: 
-        "information headshot" auto / 1fr 1fr;
-        grid-area: main;
-    }
-
-    .headshot {
-        height: 50vh;
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        padding-right: 3vh;
-    }
-    
-    .headshot img {
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-    .more-information {
-        grid-area: headshot;
-        font-size: .8rem;
-        padding-right: 2rem;
-    }
-    
-    .information {
-        width: 20vh;
-        font-size: .8rem;
-    }
-    
-    .information h1 {
-        font-size: 2rem;
-        font-weight: lighter;
-        margin: 0px;
-        line-height: 2.5rem;
-    }
-    
-    #name {
-        font-weight: bold;
-    }
-    
-    #position, #location {
-        font-style: italic;
-        font-weight: bold;
-    }
-    
-    #email-me {
-        font-style: italic;
-    }
-    
-    button {
-        background-color: #141313;
-        color: #FFFFFF;
-        border: none;
-        padding: 10px 20px;
-    }
-
-    #socials {
-        display: flex;
-        align-items: center;
-        justify-content:space-evenly;
-    }
-    
-    header img {
-        width: 3vh;
-        background-color: #FFFFFF;
-        border-radius: 50%;
-        grid-area: socials;
-    }
-
-    #aboutInformation h2 {
-        font-size: 1rem;
-    }
-
-    .projectsmain {
-        background-color: #FFFFFF;
-        display: grid;
-        place-items: center;
-    }
-    
-    #projects {
-        display: grid;
-        grid-template: "projectone projecttwo" 1fr "projectthree projectfour" 1fr / 1fr 1fr;
-        margin: 1vh 1vh;
-    }
-    
-    #projects > * {
-        margin: 1vh 1vh;
-        max-width: 30vh;
-        min-height: 30vh;
-    }
-    
-    #project1 {
-        grid-area: projectone;
-    }
-    
-    #project2 {
-        grid-area: projecttwo;
-    }
-    
-    #project3 {
-        grid-area: projectthree;
-    }
-    
-    #project4 {
-        grid-area: projectfour;
-    }
-    
-    #contactform {
-        background: linear-gradient(90deg, rgba(184,106,223,1) 0%, rgba(255,108,99,1) 35%, rgba(255,177,71,1) 100%);;
-        height: 60vh;
-        display: grid;
-        padding: 40px 60px;
-        grid-template-rows: 1fr 3fr;
-        width: 80%;
-    }
-    
-    #contactform h2 {
-        color: #FFFFFF;
-        font-size: 2rem;
-    }
-    
-    form {
-        display: grid;
-        grid-template: "fname email" 1fr "message message" 1fr "button button" 1fr / 1fr 1fr;
-    }
-    
-    input {
-        background: transparent;
-        border-width: 0 0 3px 0;
-        color: #FFFFFF;
-        padding: 10px 0px;
-        width: 90%;
-        font-size: 1rem;
-    }
-    
-    label {
-        color: #FFFFFF;
-        font-size: 1rem;
-    }
-    
-    #fullname {
-        grid-area: fname;
-    }
-    
-    #reply {
-        grid-area: email;
-    }
-    
-    #textMessage {
-        grid-area: message;
-    }
-    
-    #textMessage textarea {
-        background: transparent;
-        border-width: 0 0 3px 0;
-        color: #FFFFFF;
-        width: 95%;
-        min-height: 40%;
-        resize: none;
-    }
-    
-    #textMessage label {
-        display: block;
-    }
-    
-    #submitbutton {
-        grid-area: button;
-    }
-    
-    #submitbutton button {
-        padding: 20px 30px;
-    }
-
-}
-
